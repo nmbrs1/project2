@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+  padding: 0;
+}
+body{
+  background-size: 1900px;
+  background-position: center top;
+}
+
+#page{
+  width: 1000px;
+  margin: 50px auto 0px;
+}
+
+#header{
+    height: 60px;
+  border-radius: 60px 60px 60px 60px;
+    text-align: center;
+    
+}
+
+.title{
+  font-size: 65px;
+  text-align: center;
+  
+}
+
+#start{
+    text-align: center;
+    padding: 35px 0px 20px 0px;
+    
+}
+
+
+#schools{
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+    width: 600px;
+    margin:auto;
+}
+
+#values{
+    text-align: center;
+    padding: 30px;
+}
+.frontphoto{
+    width: 600px;
+
+}
