@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Початок</title>
+    <style> 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.4s ease;
+}
+
+#navbar.hidden {
+  transform: translateY(-100%);
+}
+
+#navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+#navbar .nav-links a:hover {
+  color: #caf0f8;
+}</style>
 </head>
 <body>
-    <div class="text"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices elit at accumsan scelerisque. Nullam at pellentesque augue. Curabitur pharetra, mi ut lobortis vulputate, arcu risus ornare velit, et gravida dui dolor sit amet orci. Suspendisse ut tincidunt mi. Sed luctus tellus quis ligula bibendum malesuada. Quisque sit amet elementum nulla. Cras luctus tristique neque, eu mollis sapien facilisis ac. Cras magna velit, blandit id arcu vel, scelerisque egestas ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque faucibus lectus eu tortor egestas, a dignissim eros scelerisque. Phasellus elementum feugiat magna at semper. </p></div>
-    
+        <div id="navbar">
+          <div class="logo">Ліцей Науковий</div>
+          <div class="nav-links">
+            <a href="pages/start.html">Початок</a>
+            <a href="pages/schools.html">Школи</a>
+            <a href="pages/values.html">Цінності</a>
+            <a href="pages/contacts.html">Контакти</a>
+          </div>
+        </div>
+    <div><p>okrgio</p></div>
 </body>
 </html>
