@@ -89,11 +89,54 @@ body {
   margin: 40px 0;
 }
 
-.frontphoto {
+.overlay-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-container img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.overlay-box {
+  position: absolute;
+  width: 250px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  transition: transform 0.3s;
+}
+
+.overlay-box:hover {
+  transform: scale(1.05);
+}
+
+.overlay-box.one {
+  top: 15%;
+  left: 10%;
+}
+
+.overlay-box.two {
+  top: 40%;
+  left: 35%;
+}
+
+.overlay-box.three {
+  top: 65%;
+  right: 10%;
+}
+/* .frontphoto {
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
+} */
 
 .cta-btn {
   display: inline-block;
