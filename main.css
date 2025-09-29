@@ -124,22 +124,22 @@ body {
 }
 
 .overlay-box.one {
-  top: 20%;
+  top: 15%;
   right: 10%;
 }
 
 .overlay-box.two {
-  top: 20%;
+  top: 15%;
   right: -20%;
 }
 
 .overlay-box.three {
-  bottom: 20%;
+  bottom: 15%;
   right: 10%;
 }
 
 .overlay-box.four {
-  bottom: 20%;
+  bottom: 15%;
   right: -20%;
 }
 
