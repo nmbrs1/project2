@@ -1,50 +1,95 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
   padding: 0;
-}
-body{
-  background-size: 1900px;
-  background-position: center top;
+  box-sizing: border-box;
 }
 
-#page{
-  width: 1000px;
-  margin: 50px auto 0px;
+body {
+  font-family: 'Merriweather', serif;
+  background: #f9f9fc;
+  color: #222;
+  line-height: 1.6;
 }
 
-#header{
-    height: 60px;
-  border-radius: 60px 60px 60px 60px;
-    text-align: center;
-    
+#page {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
-.title{
-  font-size: 65px;
+
+#header {
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
   text-align: center;
-  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-#start{
-    text-align: center;
-    padding: 35px 0px 20px 0px;
-    
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 
-#schools{
-    text-align: center;
-    padding: 0px;
+#start {
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+
+#schools {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+#values {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.frontphoto {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  font-size: 18px;
+  background: #00b4d8;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #0077b6;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+  #start {
     font-size: 20px;
-    width: 600px;
-    margin:auto;
-}
-
-#values{
-    text-align: center;
-    padding: 30px;
-}
-.frontphoto{
-    width: 600px;
-
+  }
+  #schools {
+    font-size: 18px;
+    padding: 0 10px;
+  }
 }
