@@ -98,6 +98,7 @@ body {
   width: 100%;
   border-radius: 20px;
   display: block;
+  float: left;
 }
 
 .overlay-box {
@@ -120,22 +121,22 @@ body {
 
 .overlay-box.one {
   top: 20%;
-  left: 10%;
+  left: -20%;
 }
 
 .overlay-box.two {
   top: 20%;
-  right: 10%;
+  right: -50%;
 }
 
 .overlay-box.three {
   bottom: 20%;
-  left: 10%;
+  right: -20%;
 }
 
 .overlay-box.four {
   bottom: 20%;
-  right: 10%;
+  right: -50%;
 }
 
 .previewphoto {
