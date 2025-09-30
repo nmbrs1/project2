@@ -116,7 +116,9 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s;
-  overflow: hidden;        
+  overflow: hidden;   
+  white-space: normal;
+  text-overflow: ellipsis;
 }
 
 .overlay-box:hover {
