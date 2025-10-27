@@ -4,25 +4,25 @@
   left: 0;
   width: 100%;
   background: linear-gradient(135deg, #0077b6, #00b4d8);
-  color: white;
   padding: 15px 40px;    
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: transform 0.4s ease;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#navbar.hidden {
-  transform: translateY(-100%);
+#navbar .nav-links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 #navbar .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
   font-size: 18px;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -32,34 +32,18 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: block;         
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;    
-  visibility: hidden;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.dropdown:hover .dropdown-content {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  visibility: visible;
 }
 
 .dropbtn {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  gap: 4px;
 }
 
 .dropbtn::after {
-  content: " ▼";
-  font-size: 14px;
+  content: "▼";
+  font-size: 12px;
   transition: transform 0.25s ease;
 }
 
@@ -67,11 +51,43 @@
   transform: rotate(180deg);
 }
 
+.dropdown-content {
+  position: absolute;
+  background-color: #0096c7;
+  border-radius: 6px;
+  min-width: 180px;
+  top: 45px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 15px;
+  color: white;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #00b4d8;
+}
+
 body {
   font-family: 'Merriweather', serif;
   background: #f2eed9;
   color: #222;
   line-height: 1.6;
+  margin: 0;
 }
 
 html, body {
@@ -80,6 +96,6 @@ html, body {
 
 #page {
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 120px auto 50px; 
   padding: 20px;
 }
