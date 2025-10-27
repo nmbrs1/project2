@@ -6,7 +6,7 @@
   background: linear-gradient(135deg, #0077b6, #00b4d8);
   padding: 15px 40px;    
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   z-index: 1000;
   box-sizing: border-box;
