@@ -95,7 +95,8 @@
 #main {
   justify-self: right;
   position: relative;
-  padding-left: 275%;
+  /* padding-left: 275%; */
+  left: 265%;
 }
 
 body {
