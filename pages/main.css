@@ -92,6 +92,11 @@
 }
 .dropdown-content a:hover { background-color: #00b4d8; }
 
+#main {
+  justify-self: right;
+  position: relative;
+  padding-left: 275%;
+}
 
 body {
   font-family: 'Merriweather', serif;
