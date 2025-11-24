@@ -1,34 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Цінності</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f7f2ea;
+      --text: #111;
+      --blue: #cfe8ff;
+      --accent: #0b66ff;
+      --maxwidth: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      color:var(--text);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:var(--maxwidth);
+      margin:40px auto;
+      padding:40px;
+    }
+
+    .title{
+      font-weight:800;
+      font-size:2.25rem;
+      line-height:1.02;
+      margin:0 0 28px 0;
+      letter-spacing: -0.02em;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .left{
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+    }
+    .avatar{
+      width:140px;
+      height:140px;
+      border-radius:999px;
+      overflow:hidden;
+      flex-shrink:0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .caption{
+      font-size:0.95rem;
+      line-height:1.32;
+      color:#222;
+      margin-top:6px;
+      max-width:150px;
+    }
+
+    .highlight{
+      background: linear-gradient(180deg, rgba(11,102,255,0.10), rgba(11,102,255,0.06));
+      border-radius:10px;
+      padding:20px;
+      font-size:0.98rem;
+      line-height:1.5;
+      box-shadow: 0 6px 18px rgba(11,102,255,0.06);
+      border-left:4px solid rgba(11,102,255,0.25);
+      color:#07224b;
+    }
+
+    .subheading{
+      margin-top:22px;
+      font-weight:700;
+      font-size:1.1rem;
+    }
+
+    @media (max-width:880px){
+      .grid{grid-template-columns: 1fr; }
+      .left{margin-bottom:20px}
+      .avatar{width:110px;height:110px}
+      .title{font-size:1.6rem}
+    }
+  </style>
 </head>
 <body>
-<div id="page">
-    <div id="navbar">
-    <div class="nav-links">
-      <div class="dropdown">
-        <a href="#" class="dropbtn">Про нас</a>
-        <div class="dropdown-content">
-          <a href="/project2/pages/start.html">Про школу</a>
-            <a href="/project2/pages/values.html">Цінності</a>
+  <div class="wrap">
+    <h1 class="title">Ліцей "Науковий" поєднує принципи академічності та забезпечує психологічний комфорт кожного учасника освітнього процесу</h1>
+
+      <div class="grid">
+      <div class="left">
+        <div class="avatar">
+          <img src="/mnt/data/d5212183-6729-490a-8b32-c3ce288b5d48.png" alt="school photo">
         </div>
-    </div>
-      <div class="dropdown">
-        <a href="" class="dropbtn">Школи</a>
-        <div class="dropdown-content">
-          <a href="/project2/pages/schools.html">Вступ у початкову школу</a>
-          <a href="/project2/pages/cusu.html">Вступ у ЦДУ</a>
+
+        <div class="caption">
+          Ми заохочуємо учнів бачити ширші горизонти, вільно обирати свій цікавий шлях
         </div>
+      </div>
+      <div>
+        <div class="highlight">
+          Так, у подорож до власної майбутньої компетенції ми складаємо в рюкзачок учню вичерпні академічні знання. Але цим ми не обмежуємося! Приділяє час – діти мають самі подбати про себе. Сміливо робити власний вибір, а не чекати директив від батьків. Вміти радіти за нього. Нести відповідальність. Не боятися пробувати й знаходити себе. Досягати. Пишаємось собою. Керувати власним життям і кар'єрою від першої особи. Повага та етика – наріжні камені нашої системи освіти. Ми не повчаємо – ми пояснюємо і надаємо приклади. Створюємо безпечне середовище. Дякуємо і вчимо відстоювати власні цінності з повагою до інших.
+        </div>
+
+        <h2 class="subheading">Наші цінності базуються на основах сучасного гуманного суспільства, і ми віримо, що емпатія, етика та філософія має закладатися з дитинства.</h2>
+      </div>
     </div>
-    <a href="/project2/pages/contacts.html">Контакти</a>
-        <a href="/project2/index.html" id="main">Ліцей "Науковий"</a>
-    </div>
-    </div>
-<div><p>lorem ipsum</p></div>
-</div>
+  </div>
 </body>
 </html>
