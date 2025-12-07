@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+              .image {
+            width: 300px;
+            height: 300px;
+            border-radius: 999px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+        .content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    </style>
 </head>
 <body>
 <div id="page">
@@ -28,6 +53,7 @@
         <a href="/project2/index.html" id="main">Ліцей "Науковий"</a>
     </div>
     </div>
+    <div class="content-row">
 <div><p>вул. Шевченка, 1, м.Кропивницький
 25006, Україна
 
@@ -43,6 +69,11 @@ mails@cuspu.edu.ua
 
 Веб-майстер:
 webmaster@cuspu.edu.ua</p></div>
+        <div class="image-column">
+    <img src="../images/cuspu.jpg" class="image">
+    <img src="../images/elisavetgrad.jpg" class="image">
+        </div>
+</div>
 </div>
 </body>
 </html>

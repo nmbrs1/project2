@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Початкова школа</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+              .image {
+            width: 300px;
+            height: 300px;
+            border-radius: 999px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+        .content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    </style>
 </head>
 <body>
 <div id="page">
@@ -28,7 +53,7 @@
         <a href="/project2/index.html" id="main">Ліцей "Науковий"</a>
     </div>
     </div>
-<div><p>
+<div class="content-row"><p>
 <h1>Вступ до початкової школи </h1>
 <h2>Терміни зарахування</h2>
 Основний період: З 1 квітня по 31 травня. До 1 червня видається наказ про зарахування дітей, які проживають на закріпленій за школою території або мають першочергове право (діти працівників школи, брати/сестри учнів, випускники дошкільних підрозділів). 
@@ -39,7 +64,11 @@
 Паспорт : одного з батьків або законного представника дитини, з реєстрацією. 
 Свідоцтво про народження : дитини (оригінал для звірки, копія для справи). 
 Медична довідка : за формою № 086/о «Медічна довідка (витяг з медичної картки амбулаторного хворого)». 
-За бажанням батьків може додаватися висновок ІРЦ про комплексну психолого-педагогічну оцінку розвитку дитини.</p></div>
+За бажанням батьків може додаватися висновок ІРЦ про комплексну психолого-педагогічну оцінку розвитку дитини.</p>
+<div class="image-column">
+    <img src="../images/primary1.jpg" class="image">
+    <img src="../images/primary2.jpg" class="image">
+</div>
 </div>
 </body>
 </html>
