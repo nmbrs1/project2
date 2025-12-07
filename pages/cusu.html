@@ -13,6 +13,23 @@
             overflow: hidden;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         }
+        .content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -37,7 +54,9 @@
         <a href="/project2/index.html" id="main">Ліцей "Науковий"</a>
     </div>
     </div>
-<div><p><h1>РЕЄСТРАЦІЯ учнів на конкурсні випробування для вступу до комунального закладу «Ліцей «Науковий» Кропивницької міської ради» (корпуси ЦДУ ім. В. Винниченка та бізнес-центру «Єлисаветград») ЗАВЕРШЕНА.</h1>
+
+    <div class="content-row">
+    <div><p class="text-block"><h1>РЕЄСТРАЦІЯ учнів на конкурсні випробування для вступу до комунального закладу «Ліцей «Науковий» Кропивницької міської ради» (корпуси ЦДУ ім. В. Винниченка та бізнес-центру «Єлисаветград») ЗАВЕРШЕНА.</h1>
 Вона здійснювалася у період з 01 лютого по 31 травня 2025 року (включно).
 
   
@@ -51,8 +70,11 @@
 ✅ документ для допуску: паспорт або, у разі його відсутності, свідоцтво про народження;
 ✅ 2 ручки з пастою синього кольору, олівець, лінійку;
 ✅ питну воду без етикетки.</p></div>
+        <div class="image-column">
     <img src="../images/cuspu.jpg" class="image">
     <img src="../images/elisavetgrad.jpg" class="image">
+        </div>
+</div>
 </div>
 </body>
 </html>
